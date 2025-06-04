@@ -1,24 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arreglio - Connect with Repair Workshops
+
+Arreglio is a platform that connects repair workshops with customers, making it easy to find and book repair services. Built with Next.js and featuring a modern, responsive design with internationalization support.
+
+## Features
+
+- 🌐 Multi-language support (English, French, Spanish, Swedish)
+- 🎨 Modern UI with dark mode support
+- 📱 Fully responsive design
+- ⚡ Built with Next.js and TypeScript
+- 🎯 Tailwind CSS for styling
+- 🔄 Class Variance Authority for component variants
+
+## Tech Stack
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- next-intl for internationalization
+- Class Variance Authority
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+```bash
+git clone [your-repository-url]
+cd arreglio
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+pnpm install
+```
+
+3. Create a `.env` file based on `.env.example` (if applicable)
+
+4. Run the development server:
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/           # Next.js app directory
+├── components/    # Reusable components
+├── locales/      # Translation files
+└── styles/       # Global styles
+```
+
+## Available Languages
+
+- 🇬🇧 English (en)
+- 🇫🇷 French (fr)
+- 🇪🇸 Spanish (es)
+- 🇸🇪 Swedish (sv)
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Learn More
 
