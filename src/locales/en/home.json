@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "Fixing Repairs for Everyone",
+    "description": "Connecting customers and workshops through a smart platform built on trust and simplicity",
+    "primaryCTA": "Join as a Workshop",
+    "secondaryCTA": "Find a Repair Shop",
+    "imageAlt": "Arreglio mobile app interface",
+    "previewAlt": "Workshop dashboard preview",
+    "stats": {
+      "workshops": "500",
+      "workshopsLabel": "Trusted Workshops",
+      "customers": "10,000",
+      "customersLabel": "Happy Customers"
+    }
+  }
+}

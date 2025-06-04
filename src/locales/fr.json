@@ -1,0 +1,35 @@
+{
+  "Home": {
+    "title": "Réparations pour Tous",
+    "subtitle": "Connecter les clients et les ateliers grâce à une plateforme intelligente basée sur la confiance et la simplicité",
+    "forCustomers": "Pour les Clients",
+    "customerDescription": "Trouvez des ateliers de réparation de confiance, prenez rendez-vous et suivez vos réparations - le tout au même endroit.",
+    "forWorkshops": "Pour les Ateliers",
+    "workshopDescription": "Gérez votre atelier efficacement, développez votre entreprise et ravissez vos clients avec nos outils numériques.",
+    "features": "Pourquoi Choisir Arreglio",
+    "feature1": {
+      "title": "Réservation Facile",
+      "description": "Réservez des réparations 24h/24 et 7j/7 en quelques clics"
+    },
+    "feature2": {
+      "title": "Mises à Jour en Temps Réel",
+      "description": "Restez informé de l'état de votre réparation"
+    },
+    "feature3": {
+      "title": "Paiements Sécurisés",
+      "description": "Payez en toute sécurité via notre plateforme"
+    }
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "Common": {
+    "getStarted": "Commencer",
+    "learnMore": "En Savoir Plus",
+    "contactUs": "Contactez-nous"
+  }
+}

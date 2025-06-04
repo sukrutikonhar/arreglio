@@ -1,0 +1,57 @@
+{
+  "Home": {
+    "title": "Fixing Repairs for Everyone",
+    "subtitle": "Connecting customers and workshops through a smart platform built on trust and simplicity",
+    "forCustomers": "For Customers",
+    "customerDescription": "Find trusted repair shops, book appointments, and track your repairs - all in one place.",
+    "forWorkshops": "For Workshops",
+    "workshopDescription": "Manage your workshop efficiently, grow your business, and delight your customers with our digital tools.",
+    "features": "Why Choose Arreglio",
+    "feature1": {
+      "title": "Easy Booking",
+      "description": "Book repairs 24/7 with just a few clicks"
+    },
+    "feature2": {
+      "title": "Real-time Updates",
+      "description": "Stay informed about your repair status"
+    },
+    "feature3": {
+      "title": "Secure Payments",
+      "description": "Pay safely through our platform"
+    },
+    "hero": {
+      "title": "Fixing Repairs for Everyone",
+      "description": "Connecting customers and workshops through a smart platform built on trust and simplicity",
+      "primaryCTA": "Get Started",
+      "secondaryCTA": "Learn More",
+      "imageAlt": "Arreglio mobile app interface",
+      "previewAlt": "Workshop dashboard preview",
+      "stats": {
+        "workshops": "500",
+        "workshopsLabel": "Trusted Workshops",
+        "customers": "10,000",
+        "customersLabel": "Happy Customers"
+      }
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "forCustomers": "For Customers",
+    "forWorkshops": "For Workshops",
+    "footerTagline": "Connecting customers and workshops through a smart platform built on trust and simplicity",
+    "allRightsReserved": "All rights reserved."
+  },
+  "Common": {
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us"
+  }
+}

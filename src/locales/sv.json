@@ -1,0 +1,35 @@
+{
+  "Home": {
+    "title": "Reparationer för Alla",
+    "subtitle": "Vi kopplar samman kunder och verkstäder genom en smart plattform byggd på förtroende och enkelhet",
+    "forCustomers": "För Kunder",
+    "customerDescription": "Hitta pålitliga verkstäder, boka tider och följ dina reparationer - allt på ett ställe.",
+    "forWorkshops": "För Verkstäder",
+    "workshopDescription": "Hantera din verkstad effektivt, väx din verksamhet och gläd dina kunder med våra digitala verktyg.",
+    "features": "Varför Välja Arreglio",
+    "feature1": {
+      "title": "Enkel Bokning",
+      "description": "Boka reparationer dygnet runt med några få klick"
+    },
+    "feature2": {
+      "title": "Uppdateringar i Realtid",
+      "description": "Håll dig informerad om din reparationsstatus"
+    },
+    "feature3": {
+      "title": "Säkra Betalningar",
+      "description": "Betala säkert genom vår plattform"
+    }
+  },
+  "Navigation": {
+    "home": "Hem",
+    "about": "Om Oss",
+    "services": "Tjänster",
+    "blog": "Blogg",
+    "contact": "Kontakt"
+  },
+  "Common": {
+    "getStarted": "Kom Igång",
+    "learnMore": "Läs Mer",
+    "contactUs": "Kontakta Oss"
+  }
+}

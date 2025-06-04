@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 44, 62, 80;
+  --background-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 17, 24, 39;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer base {
+  /* Default heading styles for light backgrounds */
+  h1,
+  h2,
+  h3 {
+    @apply text-text-title-light;
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+  p {
+    @apply text-text-body;
+  }
+  a {
+    @apply text-primary hover:text-primary-light transition-colors;
+  }
+}
+
+@layer utilities {
+  /* Light background sections */
+  .bg-light-primary {
+    @apply bg-background-light-primary;
+  }
+  .bg-light-primary h1,
+  .bg-light-primary h2,
+  .bg-light-primary h3 {
+    @apply text-text-title-light;
+  }
+  .bg-light-primary p {
+    @apply text-text-body;
+  }
+
+  .bg-light-secondary {
+    @apply bg-background-light-secondary;
+  }
+  .bg-light-secondary h1,
+  .bg-light-secondary h2,
+  .bg-light-secondary h3 {
+    @apply text-text-title-light;
+  }
+  .bg-light-secondary p {
+    @apply text-text-body;
+  }
+
+  /* Dark background sections */
+  .bg-dark-primary {
+    @apply bg-background-dark-primary;
+  }
+  .bg-dark-primary h1,
+  .bg-dark-primary h2,
+  .bg-dark-primary h3,
+  .bg-dark-primary p {
+    @apply text-text-title-dark;
+  }
+
+  .bg-dark-secondary {
+    @apply bg-background-dark-secondary;
+  }
+  .bg-dark-secondary h1,
+  .bg-dark-secondary h2,
+  .bg-dark-secondary h3,
+  .bg-dark-secondary p {
+    @apply text-text-title-dark;
+  }
+}

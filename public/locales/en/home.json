@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "title": "Fixing Repairs for Everyone",
+    "description": "Connecting customers and workshops through a smart platform built on trust and simplicity",
+    "primaryCTA": "Get Started",
+    "secondaryCTA": "Learn More",
+    "imageAlt": "Arreglio mobile app interface",
+    "previewAlt": "Workshop dashboard preview",
+    "stats": {
+      "workshops": "500",
+      "workshopsLabel": "Trusted Workshops",
+      "customers": "10,000",
+      "customersLabel": "Happy Customers"
+    }
+  },
+  "features": {
+    "title": "Why Choose Arreglio",
+    "description": "Everything you need to manage repairs efficiently",
+    "list": [
+      {
+        "title": "Easy Booking",
+        "description": "Book repairs 24/7 with just a few clicks"
+      },
+      {
+        "title": "Real-time Updates",
+        "description": "Stay informed about your repair status"
+      },
+      {
+        "title": "Secure Payments",
+        "description": "Pay safely through our platform"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "description": "Hear from our satisfied customers and workshop partners",
+    "items": [
+      {
+        "quote": "Arreglio has transformed how we manage our workshop. The platform is intuitive and saves us hours every day.",
+        "author": "John Smith",
+        "role": "Workshop Owner",
+        "company": "Elite Auto Service"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "description": "Join thousands of satisfied users and transform your repair experience today.",
+    "primaryButton": "Create Account",
+    "secondaryButton": "Contact Sales"
+  }
+}
