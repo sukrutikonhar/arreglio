@@ -5,7 +5,8 @@ import '../globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
-type Props = {
+// Update the Props type to match Next.js expectations
+interface LayoutProps {
     children: React.ReactNode
     params: {
         locale: string
@@ -27,16 +28,18 @@ export function generateStaticParams() {
     return [{ locale: 'en' }, { locale: 'fr' }, { locale: 'es' }, { locale: 'sv' }]
 }
 
-export default async function LocaleLayout({
+// Change the component to use LayoutProps
+export default function LocaleLayout({
     children,
     params: { locale }
-}: Props) {
-    const messages = await getMessages(locale)
-
+}: LayoutProps) {
     return (
         <html lang={locale}>
             <body>
-                <NextIntlClientProvider locale={locale} messages={messages}>
+                <NextIntlClientProvider
+                    locale={locale}
+                    messages={getMessages(locale)}
+                >
                     <Header />
                     <main className="flex-grow pt-16">
                         {children}
