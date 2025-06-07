@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { Outfit } from 'next/font/google'
 import './globals.css'
+import Script from 'next/script';
 
 const outfit = Outfit({
     subsets: ['latin'],
@@ -37,15 +38,18 @@ export default function RootLayout({
         <html lang={params?.locale || 'en'} className={`${outfit.variable} font-sans`}>
             <head>
                 {/* Google Tag Manager */}
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-XXXXX');`,
-                    }}
+                <Script
+                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+                    strategy="afterInteractive"
                 />
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                    `}
+                </Script>
             </head>
             <body suppressHydrationWarning className="min-h-screen flex flex-col bg-white dark:bg-gray-900 font-sans">
                 {/* Google Tag Manager (noscript) */}
@@ -61,4 +65,4 @@ export default function RootLayout({
             </body>
         </html>
     )
-} 
+}

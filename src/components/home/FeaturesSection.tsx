@@ -4,48 +4,54 @@ import React from 'react';
 import { FaSearch, FaCalendarCheck, FaClipboardList, FaCreditCard } from 'react-icons/fa';
 import { MdSettings, MdAssignment, MdUpdate, MdPayment } from 'react-icons/md';
 
-export default function FeaturesSection() {
-    const customerSteps = [
+interface Step {
+    icon: any;
+    title: string;
+    description: string;
+}
+
+const FeaturesSection = () => {
+    const customerSteps: Step[] = [
         {
-            icon: <FaSearch className="w-6 h-6" />,
+            icon: FaSearch,
             title: 'Find Service',
             description: 'Search for repair services in your area'
         },
         {
-            icon: <FaCalendarCheck className="w-6 h-6" />,
+            icon: FaCalendarCheck,
             title: 'Book Service',
             description: 'Choose a time that works for you'
         },
         {
-            icon: <FaClipboardList className="w-6 h-6" />,
+            icon: FaClipboardList,
             title: 'Track Progress',
             description: 'Get real-time updates on your repair'
         },
         {
-            icon: <FaCreditCard className="w-6 h-6" />,
+            icon: FaCreditCard,
             title: 'Complete Payment',
             description: 'Pay securely through the platform'
         }
     ];
 
-    const workshopSteps = [
+    const workshopSteps: Step[] = [
         {
-            icon: <MdSettings className="w-6 h-6" />,
+            icon: MdSettings,
             title: 'Set Up',
             description: 'Quick setup of your repair system'
         },
         {
-            icon: <MdAssignment className="w-6 h-6" />,
+            icon: MdAssignment,
             title: 'Accept Jobs',
             description: 'Manage incoming repair requests'
         },
         {
-            icon: <MdUpdate className="w-6 h-6" />,
+            icon: MdUpdate,
             title: 'Update Status',
             description: 'Keep customers informed on progress'
         },
         {
-            icon: <MdPayment className="w-6 h-6" />,
+            icon: MdPayment,
             title: 'Get Paid',
             description: 'Receive payments automatically'
         }
@@ -77,22 +83,25 @@ export default function FeaturesSection() {
                                 </p>
                             </div>
                             <div className="space-y-10">
-                                {customerSteps.map((step, index) => (
-                                    <div key={index} className="flex gap-4">
-                                        <div className="relative flex-shrink-0">
-                                            <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
-                                                {step.icon}
+                                {customerSteps.map((step, index) => {
+                                    const IconComponent = step.icon;
+                                    return (
+                                        <div key={index} className="flex gap-4">
+                                            <div className="relative flex-shrink-0">
+                                                <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
+                                                    <IconComponent className="w-6 h-6" />
+                                                </div>
+                                                {index < customerSteps.length - 1 && (
+                                                    <div className="absolute left-[23px] top-[48px] w-0 h-[calc(100%-12px)] border-l-2 border-dashed border-secondary/30" />
+                                                )}
                                             </div>
-                                            {index < customerSteps.length - 1 && (
-                                                <div className="absolute left-[23px] top-[48px] w-0 h-[calc(100%-12px)] border-l-2 border-dashed border-secondary/30" />
-                                            )}
+                                            <div className="flex-grow">
+                                                <h4 className="font-semibold text-primary mb-1">{step.title}</h4>
+                                                <p className="text-gray-600">{step.description}</p>
+                                            </div>
                                         </div>
-                                        <div className="flex-grow">
-                                            <h4 className="font-semibold text-primary mb-1">{step.title}</h4>
-                                            <p className="text-gray-600">{step.description}</p>
-                                        </div>
-                                    </div>
-                                ))}
+                                    );
+                                })}
                             </div>
                         </div>
 
@@ -113,22 +122,25 @@ export default function FeaturesSection() {
                                 </p>
                             </div>
                             <div className="space-y-10">
-                                {workshopSteps.map((step, index) => (
-                                    <div key={index} className="flex gap-4">
-                                        <div className="relative flex-shrink-0">
-                                            <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
-                                                {step.icon}
+                                {workshopSteps.map((step, index) => {
+                                    const IconComponent = step.icon;
+                                    return (
+                                        <div key={index} className="flex gap-4">
+                                            <div className="relative flex-shrink-0">
+                                                <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
+                                                    <IconComponent className="w-6 h-6" />
+                                                </div>
+                                                {index < workshopSteps.length - 1 && (
+                                                    <div className="absolute left-[23px] top-[48px] w-0 h-[calc(100%-12px)] border-l-2 border-dashed border-secondary/30" />
+                                                )}
                                             </div>
-                                            {index < workshopSteps.length - 1 && (
-                                                <div className="absolute left-[23px] top-[48px] w-0 h-[calc(100%-12px)] border-l-2 border-dashed border-secondary/30" />
-                                            )}
+                                            <div className="flex-grow">
+                                                <h4 className="font-semibold text-primary mb-1">{step.title}</h4>
+                                                <p className="text-gray-600">{step.description}</p>
+                                            </div>
                                         </div>
-                                        <div className="flex-grow">
-                                            <h4 className="font-semibold text-primary mb-1">{step.title}</h4>
-                                            <p className="text-gray-600">{step.description}</p>
-                                        </div>
-                                    </div>
-                                ))}
+                                    );
+                                })}
                             </div>
                         </div>
                     </div>
@@ -136,4 +148,6 @@ export default function FeaturesSection() {
             </div>
         </section>
     );
-} 
+};
+
+export default FeaturesSection;

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import Navigation from './Navigation';
 import LanguageSwitcher from './LanguageSwitcher';
+import Image from 'next/image';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,11 +18,12 @@ export default function Header() {
                     {/* Logo */}
                     <div className="flex-shrink-0">
                         <Link href="/" className="flex items-center">
-                            <img
-                                src="/images/logos/logo-dark.svg"
-                                alt="Arreglio"
-                                className="h-8 w-auto"
-                                loading="eager"
+                            <Image
+                                src="/logo.png"
+                                alt="Arreglio Logo"
+                                width={150}
+                                height={40}
+                                priority
                             />
                         </Link>
                     </div>
@@ -81,4 +83,4 @@ export default function Header() {
             )}
         </header>
     );
-} 
+}

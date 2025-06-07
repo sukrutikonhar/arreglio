@@ -5,10 +5,22 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaArrowRight } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import Image from 'next/image';
+
+interface SocialLink {
+    icon: any;
+    href: string;
+}
 
 export default function Footer() {
     const t = useTranslations('Navigation');
     const [email, setEmail] = useState('');
+
+    // Create icon components to avoid TypeScript issues
+    const MapIcon = FaMapMarkerAlt as any;
+    const PhoneIcon = FaPhoneAlt as any;
+    const EmailIcon = FaEnvelope as any;
+    const ArrowIcon = FaArrowRight as any;
 
     const quickLinks = [
         { key: 'features', href: '/features' },
@@ -19,11 +31,11 @@ export default function Footer() {
         { key: 'freeTrial', href: '/free-trial' },
     ];
 
-    const socialLinks = [
-        { icon: <FaFacebookF className="w-4 h-4" />, href: 'https://www.facebook.com/share/166YDFvCxf/?mibextid=wwXIfr' },
-        { icon: <FaInstagram className="w-4 h-4" />, href: 'https://www.instagram.com/arreglio/' },
-        { icon: <FaLinkedinIn className="w-4 h-4" />, href: 'https://www.linkedin.com/company/arreglio/' },
-        { icon: <FaXTwitter className="w-4 h-4" />, href: 'https://x.com/arreglio' },
+    const socialLinks: SocialLink[] = [
+        { icon: FaFacebookF, href: 'https://www.facebook.com/share/166YDFvCxf/?mibextid=wwXIfr' },
+        { icon: FaInstagram, href: 'https://www.instagram.com/arreglio/' },
+        { icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/arreglio/' },
+        { icon: FaXTwitter, href: 'https://x.com/arreglio' },
     ];
 
     const handleNewsletterSubmit = (e: React.FormEvent) => {
@@ -39,29 +51,33 @@ export default function Footer() {
                     {/* Company Description */}
                     <div className="col-span-1 md:col-span-4">
                         <Link href="/" className="inline-block">
-                            <img
-                                src="/images/logos/logo.svg"
-                                alt="Arreglio"
-                                className="h-8 w-auto"
+                            <Image 
+                              src="/logo.png" 
+                              alt="Arreglio Logo" 
+                              width={150} 
+                              height={40}
                             />
                         </Link>
                         <p className="mt-6 leading-relaxed text-[#cacaca]">
                             Arreglio is the all-in-one platform that helps repair shops manage bookings, talk to customers, and grow without the chaos. Whether you are fixing bikes, tools or cars, Arreglio gives you the tools to work smarter.
                         </p>
                         <div className="mt-6 flex space-x-4">
-                            {socialLinks.map((social, index) => (
-                                <a
-                                    key={index}
-                                    href={social.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="w-10 h-10 flex items-center justify-center rounded-full border border-[#cacaca] text-white hover:bg-white hover:border-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
-                                >
-                                    <div className="group-hover:text-primary transition-colors duration-300">
-                                        {social.icon}
-                                    </div>
-                                </a>
-                            ))}
+                            {socialLinks.map((social, index) => {
+                                const IconComponent = social.icon;
+                                return (
+                                    <a
+                                        key={index}
+                                        href={social.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-10 h-10 flex items-center justify-center rounded-full border border-[#cacaca] text-white hover:bg-white hover:border-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                                    >
+                                        <div className="group-hover:text-primary transition-colors duration-300">
+                                            <IconComponent className="w-4 h-4" />
+                                        </div>
+                                    </a>
+                                );
+                            })}
                         </div>
                     </div>
 
@@ -87,7 +103,7 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-6 text-white">{t('contact')}</h3>
                         <div className="space-y-4">
                             <div className="flex items-start space-x-3">
-                                <FaMapMarkerAlt className="w-5 h-5 mt-1 flex-shrink-0 text-white" />
+                                <MapIcon className="w-5 h-5 mt-1 flex-shrink-0 text-white" />
                                 <div className="text-[#cacaca]">
                                     <p className="text-[#cacaca]">Gårdsvägen 8,</p>
                                     <p className="text-[#cacaca]">169 70, Solna, Sweden</p>
@@ -95,13 +111,13 @@ export default function Footer() {
                                 </div>
                             </div>
                             <div className="flex items-center space-x-3">
-                                <FaPhoneAlt className="w-5 h-5 flex-shrink-0 text-white" />
+                                <PhoneIcon className="w-5 h-5 flex-shrink-0 text-white" />
                                 <a href="tel:+46720131476" className="text-[#cacaca] hover:text-white transition-colors">
                                     +46 72 013 14 76
                                 </a>
                             </div>
                             <div className="flex items-center space-x-3">
-                                <FaEnvelope className="w-5 h-5 flex-shrink-0 text-white" />
+                                <EmailIcon className="w-5 h-5 flex-shrink-0 text-white" />
                                 <a href="mailto:support@arreglio.com" className="text-[#cacaca] hover:text-white transition-colors">
                                     support@arreglio.com
                                 </a>
@@ -127,7 +143,7 @@ export default function Footer() {
                                     type="submit"
                                     className="absolute right-2 top-1/2 -translate-y-1/2 text-white bg-secondary hover:bg-secondary-light p-2 rounded-md transition-colors"
                                 >
-                                    <FaArrowRight className="w-4 h-4" />
+                                    <ArrowIcon className="w-4 h-4" />
                                 </button>
                             </div>
                             <p className="text-sm text-[#cacaca]">We don't spam. Unsubscribe any time.</p>
@@ -152,4 +168,4 @@ export default function Footer() {
             </div>
         </footer>
     );
-} 
+}
