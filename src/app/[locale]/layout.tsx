@@ -7,8 +7,10 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
 interface Props {
-    children: ReactNode
-    params: { locale: string }
+    children: React.ReactNode;
+    params: {
+        locale: string;
+    };
 }
 
 async function getMessages(locale: string) {
@@ -39,4 +41,4 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
             <Footer />
         </NextIntlClientProvider>
     )
-} 
+}
