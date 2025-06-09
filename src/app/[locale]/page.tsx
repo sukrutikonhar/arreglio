@@ -1,13 +1,13 @@
-'use client';
-
 import React from 'react';
-import HeroSection from '@/components/home/HeroSection';
-import PlatformSection from '@/components/home/PlatformSection';
-import FeaturesSection from '@/components/home/FeaturesSection';
-import CTAStatsSection from '@/components/home/CTAStatsSection';
-import LaunchSection from '@/components/home/LaunchSection';
-import StorySection from '@/components/home/StorySection';
-import FAQSection from '@/components/home/FAQSection';
+import dynamic from 'next/dynamic';
+
+const HeroSection = dynamic(() => import('@/components/home/HeroSection'), { ssr: true });
+const PlatformSection = dynamic(() => import('@/components/home/PlatformSection'), { ssr: true });
+const FeaturesSection = dynamic(() => import('@/components/home/FeaturesSection'), { ssr: true });
+const CTAStatsSection = dynamic(() => import('@/components/home/CTAStatsSection'), { ssr: true });
+const LaunchSection = dynamic(() => import('@/components/home/LaunchSection'), { ssr: true });
+const StorySection = dynamic(() => import('@/components/home/StorySection'), { ssr: true });
+const FAQSection = dynamic(() => import('@/components/home/FAQSection'), { ssr: true });
 
 type Props = {
     params: {
