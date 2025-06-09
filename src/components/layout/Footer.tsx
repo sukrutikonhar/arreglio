@@ -51,11 +51,11 @@ export default function Footer() {
                     {/* Company Description */}
                     <div className="col-span-1 md:col-span-4">
                         <Link href="/" className="inline-block">
-                            <Image 
-                              src="/logo.png" 
-                              alt="Arreglio Logo" 
-                              width={150} 
-                              height={40}
+                            <Image
+                                src="./images/logos/logo.svg"
+                                alt="Arreglio Logo"
+                                width={150}
+                                height={40}
                             />
                         </Link>
                         <p className="mt-6 leading-relaxed text-[#cacaca]">
