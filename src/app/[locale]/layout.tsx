@@ -6,7 +6,7 @@ import '../globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
-type Props = {
+interface LayoutProps {
     children: React.ReactNode;
     params: {
         locale: string;
@@ -28,7 +28,7 @@ export function generateStaticParams() {
     return [{ locale: 'en' }, { locale: 'fr' }, { locale: 'es' }, { locale: 'sv' }]
 }
 
-export default async function RootLayout({ children, params: { locale } }: Props) {
+export default async function RootLayout({ children, params: { locale } }: LayoutProps) {
     unstable_setRequestLocale(locale);
     const messages = await getMessages(locale);
 
