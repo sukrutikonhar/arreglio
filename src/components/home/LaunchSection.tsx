@@ -53,10 +53,10 @@ export default function LaunchSection() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-4xl font-bold text-white mb-6  md:px-40"
+                        className="text-3xl md:text-4xl font-bold text-white mb-6"
                     >
-                        Launch Your Workshop With Arreglio |{' '}
-                        <span className="text-secondary">Free For 2 Months</span>
+                        Launch Your Workshop With {' '}
+                        <span className="text-secondary">Arreglio</span>
                     </motion.h2>
 
                     <motion.p
@@ -73,32 +73,18 @@ export default function LaunchSection() {
 
                 <div className="max-w-5xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                        <FeatureCard title="Free Setup & Onboarding" />
+                        <FeatureCard title="Easy Setup & Onboarding" />
                         <FeatureCard title="Full Platform Access" />
                         <FeatureCard title="1-on-1 Onboarding" />
                     </div>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                         <Link
-                            href="/signup"
+                            href="/workshop"
                             className="bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg inline-flex items-center gap-2"
                         >
-                            START FREE TRIAL
+                            Start Now
                             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </Link>
-                        <Link
-                            href="/book-demo"
-                            className="text-white hover:text-secondary transition-colors flex items-center gap-2 group"
-                        >
-                            <span>Book a Demo</span>
-                            <svg
-                                className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </Link>

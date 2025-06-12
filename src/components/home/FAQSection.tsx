@@ -90,13 +90,9 @@ export default function FAQSection() {
                 <div className="max-w-5xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-12">
-                        <h6 className="text-sm font-medium text-gray-500 mb-2">FAQ</h6>
                         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                             <span className="text-secondary">Have questions?</span> We've Got Answers.
                         </h2>
-                        <p className="text-lg text-gray-600">
-                            you can send us an email from our contact form.
-                        </p>
                     </div>
 
                     {/* FAQ Items Grid */}
