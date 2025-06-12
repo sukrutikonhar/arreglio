@@ -21,7 +21,7 @@ export default function WorkshopHero() {
                             <span className="block">Simplify Your Repairs.</span>
                             <span className="text-secondary block">Impress Your Customers.</span>
                         </h1>
-                        <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-2xl">
+                        <p className="text-base sm:text-xl text-gray-300 mb-8 max-w-2xl">
                             From bookings to payments, Arreglio gives your workshop everything it needs to grow,
                             stay organized & deliver 5-star service.
                         </p>

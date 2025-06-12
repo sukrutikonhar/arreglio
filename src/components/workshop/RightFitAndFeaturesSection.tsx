@@ -66,7 +66,7 @@ export default function RightFitAndFeaturesSection() {
                     <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
                         Arreglio is the Right Fit For…
                     </h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-base text-xl max-w-5xl mx-auto">
                         Whether you're a solo mechanic, a small shop owner, or run a multi-location chain, Arreglio gives you the tools to manage bookings, talk to customers, take payments, and grow—all from your phone or computer.
                     </p>
                 </motion.div>
