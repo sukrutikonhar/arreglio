@@ -22,7 +22,7 @@ const rightBenefits = benefits.slice(mid);
 
 export default function PlatformBenefits() {
     return (
-        <section className="py-20 bg-background-light-secondary">
+        <section className="py-20 bg-background-dark-secondary">
             <div className="container mx-auto px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -31,9 +31,9 @@ export default function PlatformBenefits() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
                         One Platform.{" "}
-                        <span className="text-secondary">
+                        <span className="text-primary">
                             Infinite Benefits.
                         </span>
                     </h2>
@@ -49,7 +49,7 @@ export default function PlatformBenefits() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                                className="bg-white/80 shadow-lg rounded-xl px-6 py-3 w-64 text-right backdrop-blur-sm"
+                                className="bg-white shadow-lg rounded-xl px-6 py-3 w-64 text-right backdrop-blur-sm"
                             >
                                 <span className="text-primary font-semibold">{benefit}</span>
                             </motion.div>
@@ -107,9 +107,9 @@ export default function PlatformBenefits() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                                className="bg-white/80 shadow-lg rounded-xl px-6 py-3 w-64 text-left backdrop-blur-sm"
+                                className="bg-white shadow-lg rounded-xl px-6 py-3 w-64 text-left backdrop-blur-sm"
                             >
-                                <span className="text-gray-800 font-semibold">{benefit}</span>
+                                <span className="text-primary font-semibold">{benefit}</span>
                             </motion.div>
                         ))}
                     </div>
@@ -120,7 +120,7 @@ export default function PlatformBenefits() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.9 }}
-                    className="text-center mt-12 text-green-600 font-semibold"
+                    className="text-center mt-12 text-white font-semibold"
                 >
                     ALL THIS AND MORE WITH ZERO TECH SKILLS
                 </motion.div>
