@@ -19,7 +19,7 @@ const features = [
 
 export default function GetStartedSection() {
     return (
-        <section className="pt-60 pb-40 bg-white">
+        <section className="pt-[20rem] md:pt-60 pb-40 bg-white">
             <div className="container mx-auto flex flex-col md:flex-row items-center gap-12">
                 {/* Left: Image with background shape */}
                 <div className="relative w-full md:w-1/2 flex justify-center">
@@ -38,7 +38,7 @@ export default function GetStartedSection() {
                 </div>
 
                 {/* Right: Content */}
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 pt-10 md:pt-0">
                     <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
                         Get Your Workshop <span className="text-secondary">Online</span> Today
                     </h2>

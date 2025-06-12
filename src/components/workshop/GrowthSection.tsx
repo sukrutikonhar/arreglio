@@ -28,7 +28,6 @@ function Counter({ value, suffix, start }: { value: number; suffix: string; star
         }
     }, [start, value, count]); // ✅ count added
 
-
     return (
         <span className="text-3xl md:text-5xl font-medium text-secondary mb-3">
             <motion.span>{rounded}</motion.span>
@@ -54,7 +53,7 @@ export default function GrowthSection() {
 
                     {/* Right: Stats */}
                     <div className="col-span-12 lg:col-span-8 col-start-1 lg:col-start-5 flex flex-col justify-end relative">
-                        <div className="w-full flex flex-row justify-between items-center gap-4 md:gap-8 relative z-10">
+                        <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 relative z-10">
                             {stats.map((stat) => (
                                 <div key={stat.label} className="flex-1 flex flex-col items-center min-w-[100px]">
                                     <Counter value={stat.value} suffix={stat.suffix} start={isInView} />
@@ -66,7 +65,7 @@ export default function GrowthSection() {
                 </div>
 
                 {/* Testimonial */}
-                <div className="flex justify-center w-full absolute left-1/2 -translate-x-1/2 -bottom-32 z-20 testimonial-container">
+                <div className="flex justify-center w-full absolute left-1/2 -translate-x-1/2 -bottom-60 md:-bottom-32 z-20 testimonial-container">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
