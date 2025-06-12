@@ -47,7 +47,7 @@ export default function WorkshopHero() {
                             className="absolute -right-8 top-0 w-12 h-12 text-secondary opacity-50 hidden lg:block"
                         >
                             <Image
-                                src="/images/workshop/gear-icon.svg"
+                                src="/images/icons/gear-icon.png"
                                 alt=""
                                 width={48}
                                 height={48}
@@ -60,7 +60,7 @@ export default function WorkshopHero() {
                             className="absolute -right-16 bottom-1/4 w-16 h-16 text-secondary opacity-30 hidden lg:block"
                         >
                             <Image
-                                src="/images/workshop/gear-icon.svg"
+                                src="/images/icons/gear-icon.png"
                                 alt=""
                                 width={64}
                                 height={64}
@@ -73,7 +73,7 @@ export default function WorkshopHero() {
                             className="absolute -left-8 top-1/4 w-14 h-14 text-secondary opacity-40 hidden lg:block"
                         >
                             <Image
-                                src="/images/workshop/gear-icon.svg"
+                                src="/images/icons/gear-icon.png"
                                 alt=""
                                 width={56}
                                 height={56}
