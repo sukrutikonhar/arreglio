@@ -5,15 +5,15 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const benefits = [
-    'ONLINE BOOKING & CALENDAR',
-    'JOB CARDS & CUSTOMER HISTORY',
-    'SMS/EMAIL REMINDERS',
-    'SECURE PAYMENTS (CARD, QR, ONLINE)',
-    'IN-APP MESSAGING',
-    'BUSINESS DASHBOARD & REPORTS',
-    'ONLINE STOREFRONT & LISTINGS',
-    'MARKETING TOOLS (PROMOS, LOYALTY)',
-    'WHITE-LABEL OPTIONS FOR CHAINS'
+    'Online Booking & Calendar',
+    'Job Cards & Customer History',
+    'SMS/Email Reminders',
+    'Secure Payments (Card, QR, Online)',
+    'In-App Messaging',
+    'Business Dashboard & Reports',
+    'Online Storefront & Listings',
+    'Marketing Tools (Promos, Loyalty)',
+    'White-Label Options for Chains'
 ];
 
 const mid = Math.ceil(benefits.length / 2);
@@ -31,7 +31,7 @@ export default function PlatformBenefits() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
                         One Platform.{" "}
                         <span className="text-secondary">
                             Infinite Benefits.
@@ -51,7 +51,7 @@ export default function PlatformBenefits() {
                                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                                 className="bg-white/80 shadow-lg rounded-xl px-6 py-3 w-64 text-right backdrop-blur-sm"
                             >
-                                <span className="text-gray-800 font-semibold">{benefit}</span>
+                                <span className="text-primary font-semibold">{benefit}</span>
                             </motion.div>
                         ))}
                     </div>

@@ -90,7 +90,7 @@ export default function RightFitAndFeaturesSection() {
                                     className="object-cover"
                                 />
                             </div>
-                            <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                            <h3 className="text-lg font-semibold text-primary mb-2">
                                 {type.title}
                             </h3>
                         </motion.div>
@@ -118,7 +118,7 @@ export default function RightFitAndFeaturesSection() {
                                 <div className="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-white shadow">
                                     {React.createElement(Icon as any, { className: 'text-green-500 text-2xl' })}
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                                <h3 className="text-xl font-semibold text-primary mb-2">
                                     {feature.title}
                                 </h3>
                                 <p className="text-gray-600">
