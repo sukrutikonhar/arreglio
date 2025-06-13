@@ -6,8 +6,8 @@ interface PageHeaderProps {
 }
 
 const PageHeader: React.FC<PageHeaderProps> = ({ title, breadcrumbs }) => (
-    <div className="bg-primary pb-8 pt-10 px-6 md:px-16">
-        <div className="max-w-6xl mx-auto">
+    <div className="bg-primary pb-8 pt-10 px-6 md:px-10">
+        <div className="max-w-7xl mx-auto">
             <h1 className="text-white text-3xl md:text-4xl font-bold mb-2">{title}</h1>
             <div className="text-gray-200 text-sm">{breadcrumbs}</div>
         </div>
