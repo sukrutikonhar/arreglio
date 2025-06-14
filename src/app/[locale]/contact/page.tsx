@@ -1,6 +1,18 @@
 import React from 'react';
 import { HiOutlinePhone, HiOutlineEnvelope, HiOutlineMapPin } from 'react-icons/hi2';
 import PageHeader from '@/components/common/PageHeader';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Contact Us',
+    description: 'Get in touch with Arreglio. Contact our team for support, questions, or collaboration opportunities. We\'re here to help transform your repair experience.',
+    keywords: ['contact', 'support', 'help', 'customer service', 'repair platform'],
+    openGraph: {
+        title: 'Contact Arreglio - Get in Touch',
+        description: 'Reach out to our team for support, questions, or collaboration opportunities.',
+        type: 'website',
+    },
+};
 
 // Create icon components to avoid TypeScript issues
 const PhoneIcon = HiOutlinePhone as any;
@@ -54,7 +66,7 @@ export default function ContactPage() {
                             {/* Right: Paragraph */}
                             <div className="md:pl-6 text-gray-600">
                                 <p>
-                                    We’d love to hear from you! Whether you have questions about our services, need support, or want to explore collaboration opportunities, our team is here to help. Reach out to us via email, phone, or our online contact form, and we’ll respond promptly to assist you. Let’s work together to transform the repair and service experience for you and your business!
+                                    We'd love to hear from you! Whether you have questions about our services, need support, or want to explore collaboration opportunities, our team is here to help. Reach out to us via email, phone, or our online contact form, and we'll respond promptly to assist you. Let's work together to transform the repair and service experience for you and your business!
                                 </p>
                             </div>
                         </div>
