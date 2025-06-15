@@ -146,7 +146,7 @@ export default function Footer() {
                                     <ArrowIcon className="w-4 h-4" />
                                 </button>
                             </div>
-                            <p className="text-sm text-[#cacaca]">We don't spam. Unsubscribe any time.</p>
+                            <p className="text-xs text-[#cacaca]">We don't spam. Unsubscribe any time.</p>
                         </form>
                     </div>
                 </div>

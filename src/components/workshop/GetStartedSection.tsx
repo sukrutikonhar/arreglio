@@ -4,7 +4,7 @@ import React from 'react';
 
 const features = [
     {
-        title: 'Free Setup & Onboarding',
+        title: 'Easy Setup & Onboarding',
         description: 'We help you get started quickly'
     },
     {
