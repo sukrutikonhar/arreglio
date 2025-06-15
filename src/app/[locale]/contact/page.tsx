@@ -2,6 +2,7 @@ import React from 'react';
 import { HiOutlinePhone, HiOutlineEnvelope, HiOutlineMapPin } from 'react-icons/hi2';
 import PageHeader from '@/components/common/PageHeader';
 import { Metadata } from 'next';
+import ContactForm from '@/components/contact/ContactForm';
 
 export const metadata: Metadata = {
     title: 'Contact Us',
@@ -75,33 +76,7 @@ export default function ContactPage() {
                     {/* Contact Form and Info */}
                     <div className="grid md:grid-cols-2 gap-12 items-start">
                         {/* Left: Contact Form */}
-                        <div className="bg-[#F8F7FA] p-8 rounded shadow-sm w-full">
-                            <form className="space-y-4">
-                                <input type="text" placeholder="Your Name*" className="w-full border border-gray-200 rounded px-4 py-2 bg-white focus:ring-2 focus:ring-[#2ecc71]" />
-                                <input type="email" placeholder="Email Address*" className="w-full border border-gray-200 rounded px-4 py-2 bg-white focus:ring-2 focus:ring-[#2ecc71]" />
-                                <input type="text" placeholder="Enter Subject*" className="w-full border border-gray-200 rounded px-4 py-2 bg-white focus:ring-2 focus:ring-[#2ecc71]" />
-                                <textarea placeholder="Message here" rows={4} className="w-full border border-gray-200 rounded px-4 py-2 bg-white resize-none focus:ring-2 focus:ring-[#2ecc71]" />
-
-                                {/* Checkbox Group */}
-                                <div className="pb-4">
-                                    <div className="text-lg text-[#707070] font-semibold mb-3">How Can We Help?</div>
-                                    <div className="flex gap-4 text-xs text-gray-700">
-                                        <label className="flex items-center gap-1 text-sm text-[#707070]">
-                                            <input type="checkbox" className="accent-[#2ecc71] border-gray-200 text-[#707070]" /> Bike
-                                        </label>
-                                        <label className="flex items-center gap-1 text-sm text-[#707070]">
-                                            <input type="checkbox" className="accent-[#2ecc71]" /> Garden
-                                        </label>
-                                        <label className="flex items-center gap-1 text-sm text-[#707070]">
-                                            <input type="checkbox" className="accent-[#2ecc71]" /> Store
-                                        </label>
-                                    </div>
-                                </div>
-
-                                {/* Submit Button */}
-                                <button type="submit" className="bg-[#2ecc71] text-white font-semibold px-8 py-2 rounded shadow hover:bg-[#27ae60] transition">Send Query</button>
-                            </form>
-                        </div>
+                        <ContactForm />
 
                         {/* Right: Contact Info */}
                         <div className="flex flex-col gap-6">
@@ -141,7 +116,6 @@ export default function ContactPage() {
                     </div>
                 </div>
             </section>
-
         </div>
     );
 }
