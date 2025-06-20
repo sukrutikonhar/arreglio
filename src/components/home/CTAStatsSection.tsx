@@ -113,7 +113,7 @@ export default function CTAStatsSection() {
                                 </h2>
                                 <div className="mt-8">
                                     <button className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                                        DIGITIZE MY REPAIR SHOP
+                                        Digitize My Repair Shop
                                         <svg
                                             className="w-5 h-5"
                                             fill="none"

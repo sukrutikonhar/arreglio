@@ -48,15 +48,15 @@ export default function LaunchSection() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-gradient-to-b from-secondary/20 to-transparent rounded-full blur-3xl -z-10"></div>
 
             <div className="container mx-auto px-4 relative z-10">
-                <div className="max-w-4xl mx-auto text-center mb-16">
+                <div className="max-w-6xl mx-auto text-center mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className="text-3xl md:text-4xl font-bold text-white mb-6"
                     >
-                        Launch Your Workshop With {' '}
-                        <span className="text-secondary">Arreglio</span>
+                        Launch Your Workshop With Arreglio | {' '}
+                        <span className="text-secondary">Free for 2 Months</span>
                     </motion.h2>
 
                     <motion.p

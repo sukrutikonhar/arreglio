@@ -50,7 +50,7 @@ export default function StorySection() {
                                     </div>
 
                                     {/* Stats Card */}
-                                    <div className="absolute bottom-10 right-0 bg-white rounded-xl shadow-lg p-6 transform translate-x-1/4">
+                                    {/* <div className="absolute bottom-10 right-0 bg-white rounded-xl shadow-lg p-6 transform translate-x-1/4">
                                         <div className="flex items-center gap-4">
                                             <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
                                                 <svg className="w-6 h-6 text-secondary" viewBox="0 0 24 24" fill="none">
@@ -62,7 +62,7 @@ export default function StorySection() {
                                                 <div className="text-sm text-gray-600">Services Done</div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
 
