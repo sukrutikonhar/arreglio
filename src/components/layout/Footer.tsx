@@ -23,12 +23,8 @@ export default function Footer() {
     const ArrowIcon = FaArrowRight as any;
 
     const quickLinks = [
-        { key: 'features', href: '/features' },
-        { key: 'howItWorks', href: '/how-it-works' },
-        { key: 'forWorkshops', href: '/for-workshops' },
-        { key: 'forCustomers', href: '/for-customers' },
-        { key: 'pricing', href: '/pricing' },
-        { key: 'freeTrial', href: '/free-trial' },
+        { key: 'forWorkshops', href: '/workshop' },
+        { key: 'forCustomers', href: '/customers' },
     ];
 
     const socialLinks: SocialLink[] = [

@@ -131,40 +131,29 @@ export default function CTAStatsSection() {
                                 </div>
                             </div>
 
-                            {/* Device Mockups */}
-                            <div className="relative">
+                            {/* Device Mockups Replaced with Single Laptop Image */}
+                            <div className="relative flex justify-center items-center">
+                                {/* Floating background element (optional) */}
                                 <div className="absolute -right-20 bottom-0 w-40 h-40 bg-secondary/20 rounded-full blur-2xl -z-10"></div>
-                                {/* Desktop */}
-                                <div className="relative z-10 bg-white/90 rounded-lg shadow-xl p-2 max-w-[500px] mx-auto backdrop-blur-md">
+
+                                {/* Laptop Image */}
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.92 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                                    viewport={{ once: true }}
+                                    className="relative z-10 max-w-[640px] mx-auto"
+                                >
                                     <Image
-                                        src="/images/hero/dashboard-preview.png"
-                                        alt="Arreglio Dashboard"
-                                        width={600}
+                                        src="/images/home/laptop-mock.jpg"
+                                        alt="Laptop showing Arreglio dashboard"
+                                        width={640}
                                         height={400}
-                                        className="rounded-md w-full"
+                                        className="rounded-xl shadow-2xl w-full h-auto"
                                     />
-                                </div>
-                                {/* Mobile */}
-                                <div className="absolute -bottom-10 -right-6 w-48 bg-white/90 rounded-lg shadow-xl p-2 transform rotate-12 backdrop-blur-md">
-                                    <Image
-                                        src="/images/hero/phone-mockup.png"
-                                        alt="Arreglio Mobile App"
-                                        width={200}
-                                        height={400}
-                                        className="rounded-md w-full"
-                                    />
-                                </div>
-                                {/* Tablet */}
-                                <div className="absolute -left-6 -bottom-20 w-64 bg-white/90 rounded-lg shadow-xl p-2 transform -rotate-12 backdrop-blur-md">
-                                    <Image
-                                        src="/images/hero/dashboard-preview.png"
-                                        alt="Arreglio Tablet View"
-                                        width={300}
-                                        height={200}
-                                        className="rounded-md w-full"
-                                    />
-                                </div>
+                                </motion.div>
                             </div>
+
                         </div>
                     </div>
                 </div>

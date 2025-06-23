@@ -64,107 +64,73 @@ export default function HeroSection() {
                         </motion.div>
                     </div>
 
-                    {/* Mobile Mockups */}
                     <motion.div
-                        className="relative w-full py-8 lg:py-12"
+                        className="relative w-full py-8 lg:py-12 flex justify-center"
                         initial={{ opacity: 0, scale: 0.92, x: 30 }}
                         animate={{ opacity: 1, scale: 1, x: 0 }}
                         transition={{
                             duration: imageAnimDuration,
-                            ease: [0.22, 1, 0.36, 1]
+                            ease: [0.22, 1, 0.36, 1],
                         }}
                     >
-                        <div className="relative w-full max-w-[320px] sm:max-w-[400px] aspect-[400/550] max-h-[550px] mx-auto">
-                            {/* Workshop Manager App */}
-                            <motion.div
-                                className="absolute left-0 top-0 w-[200px] xs:w-[220px] sm:w-[260px]"
-                                initial={{ x: -20, opacity: 0, rotate: -12 }}
-                                animate={{ x: 0, opacity: 1, rotate: -12 }}
-                                whileHover={{ rotate: 0 }}
-                                transition={{
-                                    duration: 0.5,
-                                    delay: 0.2
-                                }}
-                            >
-                                <div className="w-full bg-white rounded-[2rem] shadow-2xl p-2">
-                                    <div className="w-full h-full aspect-[9/19] bg-gradient-to-b from-[#2ECC71] to-[#27AE60] rounded-[1.8rem] relative overflow-hidden">
-                                        {/* Phone header */}
-                                        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-16 h-4 bg-black rounded-full"></div>
+                        <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ repeat: Infinity, duration: 8, ease: 'linear' }}
+                            className="absolute top-18 right-1/3 w-10 h-10 opacity-40 hidden lg:block z-0"
+                        >
+                            <Image
+                                src="/images/icons/gear-icon.png"
+                                alt="Gear"
+                                width={40}
+                                height={40}
+                                className="w-full h-auto"
+                            />
+                        </motion.div>
 
-                                        {/* App interface */}
-                                        <div className="p-4 pt-12 text-white">
-                                            <div className="text-center mb-4">
-                                                <h3 className="text-base sm:text-lg font-bold mb-1">Workshop Hub</h3>
-                                                <p className="text-xs opacity-80">Your Business Dashboard</p>
-                                            </div>
+                        <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ repeat: Infinity, duration: 10, ease: 'linear' }}
+                            className="absolute bottom-1/4 left-20 w-12 h-12 opacity-30 hidden lg:block z-0"
+                        >
+                            <Image
+                                src="/images/icons/gear-icon.png"
+                                alt="Gear"
+                                width={48}
+                                height={48}
+                                className="w-full h-auto"
+                            />
+                        </motion.div>
 
-                                            <div className="space-y-2">
-                                                <div className="bg-white bg-opacity-20 rounded-lg p-2">
-                                                    <div className="text-xs opacity-80">Pending Repairs</div>
-                                                    <div className="text-sm font-bold">8 Jobs</div>
-                                                </div>
+                        <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ repeat: Infinity, duration: 12, ease: 'linear' }}
+                            className="absolute top-1/3 left-8 w-10 h-10 opacity-50 hidden lg:block z-0"
+                        >
+                            <Image
+                                src="/images/icons/gear-icon.png"
+                                alt="Gear"
+                                width={40}
+                                height={40}
+                                className="w-full h-auto"
+                            />
+                        </motion.div>
 
-                                                <div className="bg-white bg-opacity-20 rounded-lg p-2">
-                                                    <div className="text-xs opacity-80">Today's Revenue</div>
-                                                    <div className="text-sm font-bold">€1,850</div>
-                                                </div>
 
-                                                <div className="bg-white bg-opacity-20 rounded-lg p-2">
-                                                    <div className="text-xs opacity-80">Workshop Rating</div>
-                                                    <div className="text-sm font-bold">4.9 ★</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </motion.div>
-
-                            {/* Customer App */}
-                            <motion.div
-                                className="absolute right-0 top-0 w-[200px] xs:w-[220px] sm:w-[260px]"
-                                initial={{ x: 20, opacity: 0, rotate: 12 }}
-                                animate={{ x: 0, opacity: 1, rotate: 12 }}
-                                whileHover={{ rotate: 0 }}
-                                transition={{
-                                    duration: 0.5,
-                                    delay: 0.3
-                                }}
-                            >
-                                <div className="w-full bg-white rounded-[2rem] shadow-2xl p-2">
-                                    <div className="w-full h-full aspect-[9/19] bg-gradient-to-b from-[#3498DB] to-[#2980B9] rounded-[1.8rem] relative overflow-hidden">
-                                        {/* Phone header */}
-                                        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-16 h-4 bg-black rounded-full"></div>
-
-                                        {/* App interface */}
-                                        <div className="p-4 pt-12 text-white">
-                                            <div className="text-center mb-4">
-                                                <h3 className="text-base sm:text-lg font-bold mb-1">Find Repairs</h3>
-                                                <p className="text-xs opacity-80">Near You</p>
-                                            </div>
-
-                                            <div className="space-y-2">
-                                                <div className="bg-white rounded-lg p-2 text-gray-800">
-                                                    <div className="font-semibold text-xs sm:text-sm">Cykel Express</div>
-                                                    <div className="text-xs text-gray-600">0.5 km • Bike Repairs</div>
-                                                    <div className="text-xs">★★★★★ (4.9)</div>
-                                                </div>
-
-                                                <div className="bg-white rounded-lg p-2 text-gray-800">
-                                                    <div className="font-semibold text-xs sm:text-sm">Tools & Fix</div>
-                                                    <div className="text-xs text-gray-600">1.2 km • Power Tools</div>
-                                                    <div className="text-xs">★★★★☆ (4.6)</div>
-                                                </div>
-
-                                                <button className="w-full bg-[#2ECC71] text-white py-1.5 rounded-lg text-xs sm:text-sm font-semibold hover:bg-[#27AE60] transition-colors">
-                                                    Book Repair Now
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        </div>
+                        {/* Phone Mockup Image */}
+                        <figure className="relative z-10 max-w-[500px] lg:mb-[-80px] xl:mb-[-100px]">
+                            <Image
+                                src="/images/home/phone-mock.png"
+                                alt="Devices mockup"
+                                width={500}
+                                height={500}
+                                className="w-full h-auto"
+                                priority
+                            />
+                        </figure>
                     </motion.div>
+
+
+
                 </div>
             </div>
         </section>
