@@ -22,7 +22,6 @@ export default function PrivacyPolicyPage() {
             />
             <section className="bg-white py-16">
                 <div className="container px-6 md:px-10 mx-auto">
-                    <h2 className="text-2xl font-bold text-primary mb-8">Privacy Policy</h2>
                     <p className="mb-6">This privacy policy describes how arreglio.com collects, uses, and protects your information when you use our website and services. By using our platform, you agree to this policy.</p>
                     <p className="mb-6">We value your privacy and handle your personal data with the utmost care. Please read this policy to understand how we process your information.</p>
                     <ul className="list-disc pl-6 space-y-4 text-gray-700 mt-8">

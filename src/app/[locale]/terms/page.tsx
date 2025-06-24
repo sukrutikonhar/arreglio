@@ -18,11 +18,10 @@ export default function TermsPage() {
         <div className="min-h-screen bg-white">
             <PageHeader
                 title="Terms & Conditions"
-                breadcrumbs={<span>Home <span className="mx-1">-</span> Terms & Conditions</span>}
+                breadcrumbs={<span>Terms of Service</span>}
             />
             <section className="bg-white py-16">
                 <div className="container px-6 md:px-10 mx-auto">
-                    <h2 className="text-2xl font-bold text-primary mb-8">Terms & Conditions</h2>
                     <p className="mb-4 text-gray-700">Last updated: March 13, 2025</p>
                     <p className="mb-8">Welcome to arreglio.com ("the Company", "we", "our" or "us"). These terms and conditions ("Terms") govern your use of our website, services, and marketplace. By using our platform, you agree to comply with these terms.</p>
                     <ol className="list-decimal pl-6 space-y-6 text-gray-700">

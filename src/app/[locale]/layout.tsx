@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import '../globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import ScrollToTop from '@/components/common/ScrollToTop'
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -40,6 +41,7 @@ export default async function RootLayout({ children, params: { locale } }: Layou
                     <main className="flex-grow pt-16">
                         {children}
                     </main>
+                    <ScrollToTop />
                     <Footer />
                 </NextIntlClientProvider>
             </body>
