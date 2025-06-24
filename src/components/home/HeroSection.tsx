@@ -56,10 +56,10 @@ export default function HeroSection() {
                             className="flex flex-col sm:flex-row gap-4"
                         >
                             <Button size="lg" asChild>
-                                <Link href="/get-started">{t('hero.primaryCTA')}</Link>
+                                <Link href="/workshop">{t('hero.primaryCTA')}</Link>
                             </Button>
                             <Button size="lg" variant="outline" asChild>
-                                <Link href="/services">{t('hero.secondaryCTA')}</Link>
+                                <Link href="https://store.arreglio.com/register">{t('hero.secondaryCTA')}</Link>
                             </Button>
                         </motion.div>
                     </div>

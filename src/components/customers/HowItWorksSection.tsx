@@ -108,7 +108,7 @@ export default function HowItWorksSection() {
             </div>
 
             {/* How It Works */}
-            <div className="py-20 container mx-auto px-4">
+            <div className="pt-[25rem] sm:pt-48 lg:pt-24 pb-20 container mx-auto px-4">
                 <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-20 text-center">
                     With Arreglio, finding a trusted local repair shop is as simple as ordering takeout. No phone calls. No confusion. Just fast, clear, and reliable service, all in one place.
                 </p>

@@ -60,7 +60,7 @@ export default function CTAButtonSection() {
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
-                                href="/find-repair-shop"
+                                href="https://store.arreglio.com/register"
                                 className="inline-block bg-secondary hover:bg-secondary-light text-white font-semibold px-8 py-2 rounded-lg transition-all duration-300 border border-secondary transform hover:scale-105 shadow-lg hover:shadow-xl"
                             >
                                 Find a Repair Shop

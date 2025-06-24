@@ -80,7 +80,7 @@ export default function LaunchSection() {
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                         <Link
-                            href="/workshop"
+                            href="https://store.arreglio.com/register"
                             className="bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg inline-flex items-center gap-2"
                         >
                             Start Now

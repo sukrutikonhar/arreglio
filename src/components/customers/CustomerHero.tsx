@@ -57,7 +57,7 @@ export default function CustomerHero() {
                             transition={{ duration: 0.6, delay: 0.8 }}
                         >
                             <Link
-                                href="/find-repair-shop"
+                                href="https://store.arreglio.com/register"
                                 className="inline-block bg-secondary hover:bg-secondary-light text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                             >
                                 Find a Repair Shop

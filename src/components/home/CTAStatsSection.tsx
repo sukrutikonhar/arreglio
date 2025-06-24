@@ -96,7 +96,7 @@ export default function CTAStatsSection() {
             {/* CTA Section */}
             <div className="relative z-10 pt-12">
                 <div className="container mx-auto px-4 md:px-6">
-                    <div className="max-w-7xl mx-auto backdrop-blur-md p-6 md:p-10">
+                    <div className="max-w-7xl mx-auto backdrop-blur-md">
                         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
                             {/* Content */}
                             <div className="relative max-w-xl">
@@ -138,20 +138,21 @@ export default function CTAStatsSection() {
 
                                 {/* Laptop Image */}
                                 <motion.div
-                                    initial={{ opacity: 0, scale: 0.92 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    initial={{ opacity: 0, scale: 0.95 }}
+                                    whileInView={{ opacity: 1, scale: 1.05 }}
                                     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                                     viewport={{ once: true }}
                                     className="relative z-10 max-w-[640px] mx-auto"
                                 >
                                     <Image
-                                        src="/images/home/laptop-mock.jpg"
+                                        src="/images/home/laptop-mock.png"
                                         alt="Laptop showing Arreglio dashboard"
                                         width={640}
                                         height={400}
-                                        className="rounded-xl shadow-2xl w-full h-auto"
+                                        className="w-full h-auto"
                                     />
                                 </motion.div>
+
                             </div>
 
                         </div>

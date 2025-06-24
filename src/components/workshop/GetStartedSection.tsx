@@ -57,7 +57,7 @@ export default function GetStartedSection() {
                         ))}
                     </div>
                     <a
-                        href="/get-started"
+                        href="https://store.arreglio.com/register"
                         className="inline-block border-2 border-secondary text-secondary font-semibold px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition"
                     >
                         Get Started

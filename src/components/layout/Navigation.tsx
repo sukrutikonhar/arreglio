@@ -7,9 +7,8 @@ import { usePathname } from 'next/navigation'
 
 const navItems = [
     { key: 'home', href: '/' },
-    { key: 'about', href: '/about' },
-    { key: 'services', href: '/services' },
-    { key: 'blog', href: '/blog' },
+    { key: 'forWorkshops', href: '/workshop' },
+    { key: 'forCustomers', href: '/customers' },
 ] as const;
 
 interface NavigationProps {

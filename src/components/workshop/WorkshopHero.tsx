@@ -26,10 +26,10 @@ export default function WorkshopHero() {
                             stay organized & deliver 5-star service.
                         </p>
                         <Link
-                            href="/get-started"
+                            href="https://store.arreglio.com/register"
                             className="inline-block bg-secondary hover:bg-secondary-light text-white font-semibold px-8 py-3 rounded-md transition-colors"
                         >
-                            Try It Today
+                            Register Now
                         </Link>
                     </motion.div>
 
