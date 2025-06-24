@@ -43,7 +43,7 @@ export default function ContactPage() {
         <div className="min-h-screen bg-white">
             <PageHeader
                 title="Contact us"
-                breadcrumbs={<span>Home <span className="mx-1">-</span> Contact us</span>}
+                breadcrumbs={<span>Contact us</span>}
             />
             {/* Main Content */}
             <section className="bg-white py-16">

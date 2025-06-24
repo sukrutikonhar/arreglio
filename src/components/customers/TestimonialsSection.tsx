@@ -78,8 +78,8 @@ export default function TestimonialsSection() {
                                             {testimonial.author.charAt(0)}
                                         </div>
                                         <div>
-                                            <p className="font-semibold">{testimonial.author}</p>
-                                            <p className="text-gray-300 text-sm">{testimonial.location}</p>
+                                            <p className="text-gray-300 font-semibold">{testimonial.author}</p>
+                                            <p className="text-[#CACACA] text-sm">{testimonial.location}</p>
                                         </div>
                                     </div>
                                 </div>

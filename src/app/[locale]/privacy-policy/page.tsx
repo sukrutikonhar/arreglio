@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
         <div className="min-h-screen bg-white">
             <PageHeader
                 title="Privacy Policy"
-                breadcrumbs={<span>Home <span className="mx-1">-</span> Privacy Policy</span>}
+                breadcrumbs={<span>Privacy Policy</span>}
             />
             <section className="bg-white py-16">
                 <div className="container px-6 md:px-10 mx-auto">

@@ -112,7 +112,12 @@ export default function CTAStatsSection() {
                                     {' '}connects both sides through one smart, transparent platform.
                                 </h2>
                                 <div className="mt-8">
-                                    <button className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                                    <a
+                                        href="https://store.arreglio.com/register"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary-light text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                                    >
                                         Digitize My Repair Shop
                                         <svg
                                             className="w-5 h-5"
@@ -127,7 +132,8 @@ export default function CTAStatsSection() {
                                                 d="M14 5l7 7m0 0l-7 7m7-7H3"
                                             />
                                         </svg>
-                                    </button>
+                                    </a>
+
                                 </div>
                             </div>
 
